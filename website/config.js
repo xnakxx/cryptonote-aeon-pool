@@ -1,10 +1,10 @@
-var api = "http://poolhost.com:1117";
+var api = "http://185.166.239.22:8118";
 
-var poolHost = "poolhost.com";
+var poolHost = "185.166.239.22";
 
-var irc = "irc.freenode.net/#poolhost";
+var irc = "irc.freenode.net/#aeon";
 
-var email = "support@poolhost.com";
+var email = "";
 
 var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
