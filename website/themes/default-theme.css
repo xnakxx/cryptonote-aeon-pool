@@ -6,7 +6,7 @@ a:hover {
 }
 body {
   line-height: 1.428571429;
-  color: #6f6e6e;  
+  color: #000000;  
 }
 .navbar-inverse {
   background-color: #2D5768;
@@ -47,13 +47,13 @@ hr {
   border-top-color: #BBBBBB;
 }
 .stats > div:not(#addressError) {
-  color: #7C7C7C;
+  color: #000000;
 }
 .stats > div:not(#addressError) > i.fa {
-  color: #03a678; 
+  color: #000000; 
 }
 .stats > div:not(#addressError) > span:not(.input-group-btn):first-of-type {  
-  color: #336A80;
+  color: #000000;
 }
 .form-control {
   border: 1px solid #03a678;  
