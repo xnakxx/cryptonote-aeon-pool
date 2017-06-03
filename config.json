@@ -133,31 +133,31 @@
     "charts": {
         "pool": {
             "hashrate": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 60,
                 "stepInterval": 1800,
                 "maximumPeriod": 86400
             },
             "workers": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 60,
                 "stepInterval": 1800,
                 "maximumPeriod": 86400
             },
             "difficulty": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 1800,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
             },
             "price": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 1800,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
             },
             "profit": {
-                "enabled": true,
+                "enabled": false,
                 "updateInterval": 1800,
                 "stepInterval": 10800,
                 "maximumPeriod": 604800
