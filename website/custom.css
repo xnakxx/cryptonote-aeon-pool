@@ -5,15 +5,15 @@
   display: none;
 }
 a {
-  color: #03a678;
+  color: #b35900;
 }
 a:hover {
-  color: #025b42;
+  color: #ff8000;
 }
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #6f6e6e;
+  color: #000000;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 h1,
@@ -38,9 +38,9 @@ h3,
   margin-bottom: 14px;
 }
 .navbar-inverse {
-  background-color: #2D5768;
-  border-color: #f9f9f8;
-  border-width: 0;
+  background-color: #464646;
+  border-color: #000000;
+  border-bottom: 1px solid #6d6d6d;
 }
 .navbar-inverse .container {
   background-color: rgba(0, 0, 0, 0);
@@ -54,10 +54,10 @@ h3,
   background-color: rgba(255, 255, 255, 0);
 }
 .navbar-inverse .navbar-text {
-  color: #CEE3E4;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #F0F9FA;
+  color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -68,23 +68,23 @@ h3,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #03a678;
+  background-color: #6d6d6d;
 }
 #stats_updated {
-  color: #F4FC3D;
+  color: #ff8000;
 }
 hr {
   border-top-color: #BBBBBB;
 }
 .stats > div:not(#addressError) {
-  color: #7C7C7C;
+  color: #000000;
   padding: 10px 0px;
 }
 .stats > div:not(#addressError).marketFooter {
   padding: 5px 0;
 }
 .stats > div:not(#addressError) > i.fa {
-  color: #03a678;
+  color: #000000;
   font-size: 21px;
   width: 30px;
   text-align: center;
@@ -92,10 +92,10 @@ hr {
 .stats > div:not(#addressError) > span:not(.input-group-btn):first-of-type {
   font-weight: 500;
   padding: 0 2px;
-  color: #336A80;
+  color: #000000;
 }
 .form-control {
-  border: 1px solid #03a678;
+  border: 1px solid #666666;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -106,17 +106,17 @@ hr {
 .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: #027454;
+  border-color: #b35900;
 }
 .input-group-addon {
-  background-color: #03a678;
+  background-color: #666666;
   color: #fff;
-  border-color: #03a678;
+  border-color: #666666;
 }
 .btn-default {
   color: #ffffff;
-  background-color: #03a678;
-  border-color: #03a678;
+  background-color: #666666;
+  border-color: #666666;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -124,8 +124,8 @@ hr {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #ffffff;
-  background-color: #027454;
-  border-color: #026a4d;
+  background-color: #b35900;
+  border-color: #804000;
 }
 .btn-default:active,
 .btn-default.active,
@@ -147,11 +147,11 @@ fieldset[disabled] .btn-default:active,
 .btn-default.disabled.active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
-  background-color: #03a678;
-  border-color: #03a678;
+  background-color: #666666;
+  border-color: #666666;
 }
 .btn-default .badge {
-  color: #03a678;
+  color: #666666;
   background-color: #ffffff;
 }
 .table th,
@@ -178,10 +178,10 @@ code {
   font-weight: 500;
 }
 .bg-primary {
-  background-color: #03a678;
+  background-color: #666666;
 }
 .bg-info {
-  background-color: #336A80;
+  background-color: #666666;
   color: #fff;
 }
 .table > thead > tr > td.success,
@@ -196,21 +196,21 @@ code {
 .table > thead > tr.success > th,
 .table > tbody > tr.success > th,
 .table > tfoot > tr.success > th {
-  background-color: #f4f9ff;
+  background-color: #000000;
 }
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover,
 .table-hover > tbody > tr.success:hover > td,
 .table-hover > tbody > tr:hover > .success,
 .table-hover > tbody > tr.success:hover > th {
-  background-color: #dbebff;
+  background-color: #000000;
 }
 .table > thead > tr > th {
-  color: #336A80;
-  border-bottom-color: #336A80;
+  color: #000000;
+  border-bottom-color: #000000;
 }
 .table > tbody > tr > td {
-  border-top-color: #c9e0e9;
+  border-top-color: #2E2E2E;
 }
 footer {
   background-color: #FDFDFD;
@@ -406,7 +406,7 @@ b {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #03a678;
+  background-color: #666666;
 }
 .adminMonitor code {
   white-space: normal;
