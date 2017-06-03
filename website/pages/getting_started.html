@@ -73,6 +73,16 @@
 
 <hr>
 
+<h3>Wallet & Daemon Software</h3>
+<p>
+    <ul>
+        <li><a target="_blank" href="http://www.aeon.cash/">Getting started with Aeon</a></li>
+        <li>Download the official AEON Wallet/Daemon: <a href="https://github.com/aeonix/aeon/releases/">GitHub Releases</a></li>
+    </ul>
+</p>
+
+<hr>
+
 <h3>Mining Apps</h3>
 <div class="yourStats table-responsive">
     <table class="table">
@@ -86,43 +96,82 @@
         </tr>
         </thead>
         <tbody id="mining_apps">
+	<tr>
+            <td class="miningAppTitle">fireice XMR CPU miner (ported to AEON by shyba)</td>
+            <td>CPU</td>
+            <td><a target="_blank" href="https://github.com/shyba/aeon-stak-cpu/releases">GitHub</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/shyba/aeon-stak-cpu">Github</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span></span>
+                <!--<code></code>-->
+            </td>
+        </tr>
         <tr>
             <td class="miningAppTitle">CPUMiner (forked by LucasJones & Wolf)</td>
             <td>CPU</td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=632724">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=632724">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://github.com/wolf9466/cpuminer-multi">Github</a></td>
+            <td><a target="_blank" href="https://github.com/Arux-BTT/CPUMiner-Multi-cryptonight-light/releases/tag/04082015">GitHub</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/moneromooo/cpuminer-multi">Github</a></td>
         </tr>
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>minerd -a cryptonight -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+                <code>minerd -a cryptonight-light -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
             </td>
         </tr>
         <tr>
-            <td class="miningAppTitle">YAM Miner (by yvg1900)</td>
+            <td class="miningAppTitle">CPUMiner (forked by LucasJones)</td>
             <td>CPU</td>
-            <td><a target="_blank" href="https://mega.co.nz/#F!UlkU0RyR!E8n4CFkqVu0WoOnsJnQkSg">MEGA</a></td>
-            <td><a target="_blank" href="https://twitter.com/yvg1900">Twitter</a></td>
-            <td>Proprietary <i class="fa fa-frown-o"></i></td>
+            <td><a target="_blank" href="https://github.com/Arux-BTT/CPUMiner-Multi-cryptonight-light/releases/tag/04082015">GitHub</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/iamsmooth/cpuminer-multi/tree/devel">GitHub</a></td>
         </tr>
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>yam -c x -M stratum+tcp://<span class="exampleAddress">YOUR_WALLET_ADDRESS</span>:x@<span class="exampleHost"></span>:<span class="examplePort"></span>/xmr</code>
+                <code>minerd -a cryptonight-lite -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+            </td>
+        </tr>
+	<tr>
+            <td class="miningAppTitle">fireice XMR NVIDIA miner (ported to AEON by stoffu)</td>
+            <td>Nvidia</td>
+            <td><a target="_blank" href="https://github.com/stoffu/aeon-stak-nvidia/releases">GitHub</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/stoffu/aeon-stak-nvidia">GitHub</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span></span>
+                <!--<code></code>-->
             </td>
         </tr>
         <tr>
-            <td class="miningAppTitle">Claymore CPU Miner</td>
-            <td>CPU</td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=647251.0">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=647251.0">BitcoinTalk</a></td>
-            <td>Proprietary <i class="fa fa-frown-o"></i></td>
+            <td class="miningAppTitle">ccminer (forked by tsiv)</td>
+            <td>CUDA (Nvidia)</td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=641696.msg12800804#msg12800804">BitcoinTalk</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/moneromooo/ccminer-cryptonight">GitHub</a></td>
         </tr>
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>NsCpuCNMiner64 -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+                <code>ccminer -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x -A</code>
+            </td>
+        </tr>
+	<tr>
+            <td class="miningAppTitle">fireice XMR AMD miner (ported to AEON by shyba)</td>
+            <td>AMD</td>
+            <td><a target="_blank" href="https://github.com/Arux-BTT/aeon-stak-amd/releases">Binary</a> / <a target="_blank" href="https://github.com/shyba/aeon-stak-amd/releases">GitHub</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/shyba/aeon-stak-amd">Github</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span></span>
+                <!--<code></code>-->
             </td>
         </tr>
         <tr>
@@ -135,26 +184,25 @@
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>NsGpuCNMiner -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+                <code>Not cryptonight-light compatible</code>
             </td>
         </tr>
         <tr>
-            <td class="miningAppTitle">ccminer (forked by tsiv)</td>
-            <td>CUDA (Nvidia)</td>
-            <td><a target="_blank" href="https://github.com/tsiv/ccminer-cryptonight/releases">Github</a></td>
-            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=656841.msg7487737#msg7487737">BitcoinTalk</a></td>
-            <td><a target="_blank" href="https://github.com/tsiv/ccminer-cryptonight">Github</a></td>
+            <td class="miningAppTitle">Wolf Aeon GPU Miner</td>
+            <td>OpenCL (AMD)</td>
+            <td><a target="_blank" href="https://github.com/OhGodAPet/wolf-aeon-miner/releases">Github</a></td>
+            <td></td>
+            <td><a target="_blank" href="https://github.com/OhGodAPet/wolf-aeon-miner">Github</a></td>
         </tr>
         <tr>
             <td colspan="5">
                 <span>Example:</span>
-                <code>ccminer -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+                <code>miner.exe aeon.conf</code>
             </td>
         </tr>
         </tbody>
     </table>
 </div>
-
 
 <script>
 
