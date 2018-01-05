@@ -114,24 +114,23 @@ sudo apt-get install git redis-server libboost1.55-all-dev nodejs-dev nodejs-leg
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/xnakxx/cryptonote-universal-pool.git pool
+git clone https://github.com/xnakxx/cryptonote-aeon-pool.git pool
 cd pool
 npm update
 ```
 
 #### 2) Configuration
-This section has NOT been updated!!!!!
 
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "ducknote",
+"coin": "AEON",
 
 /* Used for front-end display */
-"symbol": "XDN",
+"symbol": "AEON",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinUnits": 100000000,
+"coinUnits": 1000000000000,
 
 /* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/cryptonote_config.h */
 "coinDifficultyTarget": 240,
@@ -170,7 +169,7 @@ Explanation for each field:
     "clusterForks": "auto",
 
     /* Address where block rewards go, and miner payments come from. */
-    "poolAddress": "ddehi53dwGSBEXdhTYtga2R3fS4y9hRz4YHAsLABJpH75yUd5EDQmuL3yDBj1mG6MMeDfydY9vp4zFVVNQ99FTYq2PpsFJP2y"
+    "poolAddress": "YOUR POOL WALLET ADDRESS"
 
     /* Poll RPC daemons for new blocks every this many milliseconds. */
     "blockRefreshInterval": 1000,
@@ -184,17 +183,17 @@ Explanation for each field:
     "ports": [
         {
             "port": 3333, //Port for mining apps to connect to
-            "difficulty": 100, //Initial difficulty miners are set to
+            "difficulty": 1000, //Initial difficulty miners are set to
             "desc": "Low end hardware" //Description of port
         },
         {
             "port": 5555,
-            "difficulty": 2000,
+            "difficulty": 4000,
             "desc": "Mid range hardware"
         },
         {
             "port": 7777,
-            "difficulty": 10000,
+            "difficulty": 7000,
             "desc": "High end hardware"
         }
     ],
@@ -203,8 +202,8 @@ Explanation for each field:
        individual miners based on their hashrate in order to lower networking and CPU
        overhead. */
     "varDiff": {
-        "minDiff": 2, //Minimum difficulty
-        "maxDiff": 100000,
+        "minDiff": 1000, //Minimum difficulty
+        "maxDiff": 500000,
         "targetTime": 100, //Try to get 1 share per this many seconds
         "retargetTime": 30, //Check to see if we should retarget every this many seconds
         "variancePercent": 30, //Allow time to very this % from target without retargeting
@@ -243,10 +242,10 @@ Explanation for each field:
     "interval": 600, //how often to run in seconds
     "maxAddresses": 50, //split up payments if sending to more than this many addresses
     "mixin": 3, //number of transactions yours is indistinguishable from
-    "transferFee": 5000000000, //fee to pay for each transaction
-    "minPayment": 100000000000, //miner balance required before sending payment
+    "transferFee": 10000000000, //fee to pay for each transaction
+    "minPayment": 500000000000, //miner balance required before sending payment
     "maxTransactionAmount": 0, //split transactions by this amount(to prevent "too big transaction" error)
-    "denomination": 100000000000 //truncate to this precision and store remainder
+    "denomination": 10000000000 //truncate to this precision and store remainder
 },
 
 /* Module that monitors the submitted block maturities and manages rounds. Confirmed
@@ -259,7 +258,7 @@ Explanation for each field:
     /* Block depth required for a block to unlocked/mature. Found in daemon source as
        the variable CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW */
     "depth": 60,
-    "poolFee": 1.8, //1.8% pool fee (2% total fee total including donations)
+    "poolFee": 0.8, //0.8% pool fee (1% total fee total including donations)
     "devDonation": 0.1, //0.1% donation to send to pool dev - only works with Monero
     "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON and OneEvilCoin
 },
@@ -268,8 +267,8 @@ Explanation for each field:
 "api": {
     "enabled": true,
     "hashrateWindow": 600, //how many second worth of shares used to estimate hash rate
-    "updateInterval": 3, //gather stats and broadcast every this many seconds
-    "port": 8117,
+    "updateInterval": 5, //gather stats and broadcast every this many seconds
+    "port": 8118,
     "blocks": 30, //amount of blocks to send at a time
     "payments": 30, //amount of payments to send at a time
     "password": "test" //password required for admin stats
@@ -278,7 +277,7 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 18081
+    "port": 9998
 },
 
 /* Wallet daemon connection details. */
