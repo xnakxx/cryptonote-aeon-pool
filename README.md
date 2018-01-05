@@ -1,8 +1,9 @@
 cryptonote-universal-pool
 ====================
 
-High performance Node.js (with native C addons) mining pool for CryptoNote based coins such as Bytecoin, DuckNote, Monero, QuazarCoin, Boolberry, Dashcoin, etc..
+High performance Node.js (with native C addons) mining pool for the CryptoNote based coin Aeon
 Comes with lightweight example front-end script which uses the pool's AJAX API.
+*Please note that changes and modifications to this for are intended for a AEON pool only.*
 
 
 
@@ -78,21 +79,13 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 #### Pools Using This Software
 
-* http://xminingpool.com
-* http://extremepool.org
-* http://noclaymorefee.com
-* http://nicepool.org
-* https://yaymining.com
-* http://bbr.unipool.pro
-* http://multihash.de
-* http://monero.rs
-* http://backup-pool.com/monero
+None Yet
 
 Usage
 ===
 
 #### Requirements
-* Coin daemon(s) (find the coin's repo and build latest version from source)
+* Coin daemon https://github.com/aeonix/aeon
 * [Node.js](http://nodejs.org/) v0.10+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
 * libssl required for the node-multi-hashing module
@@ -107,8 +100,8 @@ Those are legitimate requirements. If you use old versions of Node.js or Redis t
 include `bind 127.0.0.1` in your `redis.conf` file. Also it's a good idea to learn about and understand software that
 you are using - a good place to start with redis is [data persistence](http://redis.io/topics/persistence).
 
-##### Easy install on Ubuntu 14 LTS
-Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubunty 14 for pool installation is to run:
+##### Easy install on Ubuntu 16 LTS
+Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 16 LTS. Thus, all you had to do in order to prepare Ubuntu 16 for pool installation is to run:
 
 ```bash
 sudo apt-get install git redis-server libboost1.55-all-dev nodejs-dev nodejs-legacy npm cmake libssl-dev
@@ -121,13 +114,13 @@ sudo apt-get install git redis-server libboost1.55-all-dev nodejs-dev nodejs-leg
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/fancoder/cryptonote-universal-pool.git pool
+git clone https://github.com/xnakxx/cryptonote-universal-pool.git pool
 cd pool
 npm update
 ```
 
 #### 2) Configuration
-
+This section has NOT been updated!!!!!
 
 Explanation for each field:
 ```javascript
@@ -495,8 +488,7 @@ curl 127.0.0.1:18081/json_rpc -d '{"method":"getblockheaderbyheight","params":{"
 
 Donations
 ---------
-* BTC: `1667jMt7NTZDaC8WXAxtMYBR8DPWCVoU4d`
-* MRO: `48Y4SoUJM5L3YXBEfNQ8bFNsvTNsqcH5Rgq8RF7BwpgvTBj2xr7CmWVanaw7L4U9MnZ4AG7U6Pn1pBhfQhFyFZ1rL1efL8z`
+* XMR: `47a4FjWwSyQZzQSp6YbabLLJHGzXnvaRRiYFp7w9hzmTANE4B4jxPBqA1fUdnbHVN4Zv3syJhNdrWFgjS8zE2AfX5XQX4EU`
 
 Credits
 ===
